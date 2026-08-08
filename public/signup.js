@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
             codesmatch.style.display = "block";
             return;
         }
-        const response = await fetch("http://localhost:8000/users/signup",
+        const response = await fetch("https://mission-control-t8qt.onrender.com/users/signup",
             {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },

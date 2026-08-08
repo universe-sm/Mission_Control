@@ -41,15 +41,15 @@ document.addEventListener("DOMContentLoaded", () => {
     //logout
     logout.addEventListener("click", () => {
         localStorage.removeItem("token");
-        window.location.href = "landing.html";
+        window.location.href = "index.html";
 
     });
 
-    //date
+    //date 
     date.textContent="Date: "+new Date().toISOString().split("T")[0];
     //username
     const getusername = async () => {
-        const response = await fetch("http://localhost:8000/users/getuser", {
+        const response = await fetch("https://mission-control-t8qt.onrender.com/users/getuser", {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
@@ -130,7 +130,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         //delete task
         deletetask.addEventListener("click", async () => {
-            const response = await fetch(`http://localhost:8000/tasks/delete/${task._id}`, {
+            const response = await fetch(`https://mission-control-t8qt.onrender.com/tasks/delete/${task._id}`, {
                 method: "DELETE",
                 headers: {
                     "Content-Type": "application/json",
@@ -151,7 +151,7 @@ document.addEventListener("DOMContentLoaded", () => {
         //checkbox
         checkbox2.addEventListener("change", async () => {
             const newstattus = checkbox2.checked ? "completed" : "pending";
-            const response = await fetch(`http://localhost:8000/tasks/update/${task._id}`, {
+            const response = await fetch(`https://mission-control-t8qt.onrender.com/tasks/update/${task._id}`, {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json",
@@ -181,7 +181,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     //loadtasks
     const loadtasks = async () => {
-        const response = await fetch("http://localhost:8000/tasks/getall", {
+        const response = await fetch("https://mission-control-t8qt.onrender.com/tasks/getall", {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
@@ -287,7 +287,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const title = document.querySelector(".title1").value;
         const description = document.querySelector(".textarea").value;
 
-        const response = await fetch("http://localhost:8000/tasks/create", {
+        const response = await fetch("https://mission-control-t8qt.onrender.com/tasks/create", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
