@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>/SignUpMissionControl</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="signup.css" class="css">
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="form">
+            <div class="container1">
+                <div class="text1"> // NEW OPERATOR REGISTRATION</div>
+                <div class="heading1">CREATE ACCESS</div>
+                <div class="description">Register to begin your first mission.</div>
+            </div>
+            <div class="container2">
+                <div class="username">
+                    <span class="userstyles"> > OPERATOR_ID</span>
+                    <input class="credentials user_name" name="username" type="text" placeholder="operator_id">
+                </div>
+                <div class="email">
+                    <span class="userstyles"> > EMAIL</span>
+                    <input class="credentials e_mail" name="email" type="text" placeholder="operator@domain.com">
+                </div>
+                <div class="password">
+                    <span class="userstyles"> > ACCESS_CODE</span>
+                    <input class="credentials pass_word" name="password" type="password" placeholder="............">
+                </div>
+                <div class="password">
+                    <span class="userstyles"> > CONFIRM_ACCESS_CODE</span>
+                    <input class="credentials confirm_password" name="confirmedpassword" type="password" placeholder="............">
+                </div>
+                <div class="codesmatch"><i class="fas fa-exclamation-triangle"></i>Codes Do Not Match</div>
+                <div class="forgot">
+                    <div class="staylogged">
+                        <input type="checkbox">
+                        <label>I agree to the Terms of Operation and Privacy Protocol</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container3">
+                <div><button type="submit" class="initiatesession" >REGISTER OPERATOR -></button></div>
+                <div class="noaccount">or<br> ALREADY REGISTERED?
+                    <span><a class="register" href="login.html">ACCESS TERMINAL</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="signup.js"></script>
+</body>
+
+</html>
