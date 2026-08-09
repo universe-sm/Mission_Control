@@ -73,6 +73,8 @@ body {
     font-size: 13px;
     color: white;
     background-color: #5ecfea;
+  padding: 5%;
+    box-sizing: border-box;
 }
 
 .createtask {
