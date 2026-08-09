@@ -64,15 +64,15 @@ body {
 }
 
 .username {
-    width: 55%;
+    min-width: 55%;
     height: 100%;
-
     font-family: 'Inter', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 13px;
     color: white;
+    background-color: #5ecfea;
 }
 
 .createtask {
