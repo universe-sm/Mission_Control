@@ -6,7 +6,7 @@ const JWT = require("jsonwebtoken");
 const createuser = async (req, res) => {
     try {
         const { username, email, password } = req.body;
-        const strongpasswordregex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&#]{8,}$/;
+        const strongpasswordregex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&#])[A-Za-z\d@$!%*?&#]{8,}$/;
         if (!strongpasswordregex.test(password)) {
             return res.status(400).json({ error: "Weak Password! Enter a strong password with at least 8 characters, including an uppercase letter, a lowercase letter, a number, and a special character(@,$,!,%,*,?,&,#)." });
         }
