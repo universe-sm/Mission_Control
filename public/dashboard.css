@@ -72,8 +72,7 @@ body {
     align-items: center;
     font-size: 13px;
     color: white;
-    background-color: #5ecfea;
-  padding: 5%;
+    padding: 5%;
     box-sizing: border-box;
 }
 
@@ -1368,7 +1367,8 @@ body {
     .createmission {
         box-shadow: inset 0px 0px 7px rgb(17, 0, 35);
     }
-    .date{
+
+    .date {
         font-size: 25px;
     }
 }
@@ -1697,7 +1697,8 @@ body {
     .createmission {
         box-shadow: inset 0px 0px 7px rgb(17, 0, 35);
     }
-    .date{
+
+    .date {
         font-size: 40px;
     }
 }
@@ -2028,7 +2029,7 @@ body {
         box-shadow: inset 0px 0px 7px rgb(17, 0, 35);
     }
 
-    .date{
+    .date {
         font-size: 40px;
     }
 }
