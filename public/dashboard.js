@@ -29,14 +29,14 @@ document.addEventListener("DOMContentLoaded", () => {
     let monthname = month.value;
     let paddedmonth;
     const clear = document.querySelector(".priority .clearfilter");
-    const clear2=document.querySelector(".priority1 .clearfilter");
+    const clear2 = document.querySelector(".priority1 .clearfilter");
     let selecteddate = null;
     const pie1 = document.querySelector(".pie1");
     const pie2 = document.querySelector(".pie2");
     const progresslabel = document.querySelector(".progresslabel");
     const search = document.querySelector(".search1");
-    const username = document.querySelector(".username");   
-    const date=document.querySelector(".date");
+    const username = document.querySelector(".username");
+    const date = document.querySelector(".date");
 
     //logout
     logout.addEventListener("click", () => {
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     //date 
-    date.textContent="Date: "+new Date().toISOString().split("T")[0];
+    date.textContent = "Date: " + new Date().toISOString().split("T")[0];
     //username
     const getusername = async () => {
         const response = await fetch("https://mission-control-t8qt.onrender.com/users/getuser", {
@@ -305,6 +305,9 @@ document.addEventListener("DOMContentLoaded", () => {
             main.style.filter = "blur(0px)";
             missionawaiting.style.display = "none";
             tasks.appendChild(rendertask(data.task));
+            tasks2.appendChild(rendertask(data.task));
+            updateprogress();
+            updateefficiency();
         }
         else {
             alert(data.error);
@@ -352,6 +355,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     card.style.display = "flex";
                 })
                 document.querySelector(".NotFound").style.display = "none";
+                document.querySelector(".tasks2 .NotFound").style.display = "none";
                 return;
             }
             day.style.background = "rgba(199, 150, 231, 0.71)";
@@ -578,7 +582,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     clear2.addEventListener("click", () => {
-         const allcards = document.querySelectorAll(".tasks2 .task-card");
+        const allcards = document.querySelectorAll(".tasks2 .task-card");
         allcards.forEach((card) => {
             const matchesDate = selecteddate ? card.dataset.date === selecteddate : true;
             if (matchesDate) {
