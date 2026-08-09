@@ -162,6 +162,9 @@ a{
     background-color: rgb(164, 132, 222);
     font-weight:bold;
 }
+.create_mission{
+     color: #000000;
+}
 
 .create:hover {
     background-color: rgb(161, 148, 219);
