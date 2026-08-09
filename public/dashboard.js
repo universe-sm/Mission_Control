@@ -273,12 +273,31 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     low.addEventListener("click", () => {
+        medium.style.background = "#171717";
+       medium.style.borderColor = " #2a2a45";
+        critical.style.background = "#171717";
+        critical.style.borderColor = " #2a2a45";
+        low.style.background = "rgba(34, 211, 238, 0.15)";
+        low.style.borderColor = "#7dd3fc";
         priority = "low";
     });
     medium.addEventListener("click", () => {
+        low.style.background = "#171717";
+        low.style.borderColor = " #2a2a45";
+        critical.style.background = "#171717";
+        critical.style.borderColor = " #2a2a45";
+        medium.style.background = "rgba(167, 139, 250, 0.15)";
+        medium.style.borderColor = " #a88ef0";
+
         priority = "medium";
     });
     critical.addEventListener("click", () => {
+        medium.style.background = "#171717";
+        medium.style.borderColor = " #2a2a45";
+        low.style.background = "#171717";
+        low.style.borderColor = " #2a2a45";
+        critical.style.background = "rgba(244, 114, 182, 0.15)";
+        critical.style.borderColor = " #f472b6";
         priority = "critical";
     });
 

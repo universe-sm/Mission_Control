@@ -694,20 +694,14 @@ body {
 }
 
 .low1:hover {
-    border-color: #7dd3fc;
-    background-color: rgba(34, 211, 238, 0.15);
     cursor: pointer;
 }
 
 .medium1:hover {
-    border-color: #a88ef0;
-    background-color: rgba(167, 139, 250, 0.15);
     cursor: pointer;
 }
 
 .high1:hover {
-    border-color: #f472b6;
-    background: rgba(244, 114, 182, 0.15);
     cursor: pointer;
 }
 
